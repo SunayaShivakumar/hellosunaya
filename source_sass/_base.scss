@@ -1,20 +1,283 @@
-// Add any custom Sass & CSS here
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400|Open+Sans:300,400,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 
-body{
-	@include breakpoint(medium down){
-		border: 5px black solid;
+html, body {
+	padding: 0;
+	margin: 0;
+	text-align: justify;
+}
+
+.top-bar {
+	background-color: $black;
+	padding: 15px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+
+	.top-bar-left {
+		.menu-text {
+			font-family: Inconsolata;
+			font-weight: 400;
+			font-size: 2rem;
+			letter-spacing: 5px;
+
+			a {
+				color: $yellow;
+				text-decoration: none;
+			}				
+		}
+
+		.menu-text a:hover {
+			color: $white;
+		}
+	}
+
+	.top-bar-right {
+		.menu {
+			padding-top: 13px;
+			font-family: Inconsolata;
+			font-weight: 400;
+			font-size: 1rem;
+			letter-spacing: 5px;
+			background-color: $black;
+
+			a {
+				color: $yellow;
+				text-decoration: none;
+			}
+		}
+
+		.menu a:hover {
+			color: $white;
+		}
+
+		.menu .active > a {
+			color: $white;
+			border-bottom: 2px solid $white;
+			background-color: $black;
+		}
 	}
 }
 
-.llama {
-  background: url('../media/llama.jpg') no-repeat center center fixed;
+#home {
+	padding: 150px 0px;
+	background-color: $yellow;
+
+	#text {
+		margin-top: 8.75%;
+		h1 {
+			font-size: 5.5rem;
+			color: $white;
+			font-family: Open Sans;
+			font-weight: 700;
+			letter-spacing: 0px;
+		}
+
+		p {
+			font-size: 1.2rem;
+			color: $black;
+			font-family: Inconsolata;
+			font-weight: 300;
+			text-align: justify;	
+		}
+
+		a {
+			font-size: 1rem;
+			color: $black;
+			font-family: Inconsolata;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: $white;
+		}
+
+		.social {
+			a {
+				padding-left: 17px;
+				text-decoration: none;
+				display: inline-block;
+				i {
+					color: $black;
+					font-size: 1rem;
+					cursor: pointer;	
+					overflow: hidden;
+				}
+			}
+
+			a:hover {
+				i {
+					color: $white;
+				}
+			}
+		}
+	}
+		
 }
 
-.text-center {
-  padding: 30px;
+#about {
+	padding: 100px 0px;
+	background-color: $white;
 
-  img {
-    border: 1px solid black;
-    max-height: 200px;
-  }
+		h1 {
+			font-size: 3.5rem;
+			color: $yellow;
+			font-family: Open Sans;
+			font-weight: 700;
+			letter-spacing: 3px;
+		}
+
+		p {
+			font-size: 1.2rem;
+			color: $black;
+			font-family: Inconsolata;
+			font-weight: 300;	
+			text-align: justify;
+		}
 }
+
+#projects {
+	padding: 100px 0px;
+	background-color: $yellow;
+
+		h1 {
+			font-size: 3.5rem;
+			color: $white;
+			font-family: Open Sans;
+			font-weight: 700;
+			letter-spacing: 3px;
+		}
+
+		p {
+			font-size: 1.2rem;
+			color: $black;
+			font-family: Inconsolata;
+			font-weight: 300;	
+			text-align: justify;
+		}
+
+	#projects-list {
+		img {
+			border-width: 1px;
+			border-style: solid;
+			border-color: $black;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+			color: $black;
+			font-family: Open Sans;
+			font-weight: 400;
+		}
+
+		p {
+			font-size: 1rem;
+			color: $black;
+			font-family: Inconsolata;
+			font-weight: 300;
+			text-align: justify;
+
+			a {
+				font-size: 1rem;
+				color: $black;
+				font-family: Inconsolata;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: $white;
+			}
+		}
+	}
+}
+
+#portfolio {
+	padding: 100px 0px;
+	background-color: $white;
+
+		h1 {
+			font-size: 3.5rem;
+			color: $yellow;
+			font-family: Open Sans;
+			font-weight: 700;
+			letter-spacing: 3px;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+			color: $black;
+			font-family: Open Sans;
+			font-weight: 400;
+		}
+
+		img {
+			border-width: 1px;
+			border-style: solid;
+			border-color: $yellow;
+		}
+}
+
+footer {
+	background-color: $black;
+	color: $yellow;
+	font-family: Inconsolata;
+	font-weight: 0.8rem;
+	padding-top: 10px;
+
+	.social {
+		float: right;
+		padding-top: 5px;
+		a {
+			padding-left: 17px;
+			text-decoration: none;
+			display: inline-block;
+			i {
+				color: $yellow;
+				font-size: 1rem;
+				cursor: pointer;	
+				overflow: hidden;
+			}
+		}
+
+		a:hover {
+			i {
+				color: $white;
+			}
+		}
+	}
+}
+
+.row {
+	max-width: 100rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+small {
+		font-size: 1.1rem;
+		color: $black !important;
+		font-family: Open Sans;
+		font-weight: 300;	
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}	

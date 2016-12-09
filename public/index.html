@@ -1,60 +1,266 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>MP2 Starter</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Sunaya Shivakumar</title>
+	<link rel="icon" href="media/favicon.png" type="image/x-icon">
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="./css/styles.css">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <nav class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">MP2</li>
-        <li>
-          <a href="https://courses.engr.illinois.edu/cs498rk1/" target="_blank">Web Page</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-	<div class="row text-center">
-		<h3>LLAMAS</h3>
+	<div class="top-bar">
+		<div class="top-bar-left">
+		<li class="menu-text dropdown menu"><a href="#home">SUNAYA SHIVAKUMAR</a></li>
+		</div>
+		<div class="top-bar-right">
+		<ul class="menu">
+			<li><a href="#about" class="active">ABOUT</a></li>
+			<li><a href="#projects">PROJECTS</a></li>
+			<li><a href="#portfolio">PORTFORLIO</a></li>
+		</ul>
+		</div>
 	</div>
 
-	<section class="row">
-		<div class="alert columns small-12 large-6">
-			<div class="text-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Domestic_llama_(2009-05-19).jpg"/>
-      </div>
-			<p>The llama is a domesticated South American camelid, widely used as a meat and pack animal by Andean cultures since the Pre-Columbian era.
-      </p>
-      <p>The height of a full-grown, full-size llama is 1.7 to 1.8 m (5.6 to 5.9 ft) tall at the top of the head, and can weigh between 130 and 200 kg (290 and 440 lb). At birth, a baby llama (called a cria) can weigh between 9 and 14 kg (20 and 31 lb). Llamas typically live for 15 to 25 years, with some individuals surviving 30 years or more.</p>
-    </div>
-		<div class="columns small-12 large-6">
-	  	<div class="text-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Machu_Picchu_Llama_2.jpg"/>
-      </div>
-	  	<p>They are very social animals and live with other llamas as a herd. The wool produced by a llama is very soft and lanolin-free. Llamas are intelligent and can learn simple tasks after a few repetitions. When using a pack, they can carry about 25 to 30% of their body weight for 8 to 13 km (5–8 miles).</p>
-      <p>The name llama (in the past also spelled 'lama' or 'glama') was adopted by European settlers from native Peruvians.</p>
-    </div>
-  </section>
+	<div id="home" class="row text-left">
+		<div class="large-10 large-offset-1 columns">
+			<div id="text" class="large-5 medium 4 large-offset-1 columns" class="hello"" style="float: right;">
+				<h1>
+					Hello.
+				</h1>
+				<p>
+					My name is Sunaya Shivakumar. <br>
+					I'm a <span class="element"></span>
+				</p>
+				<br>
+				<p>
+					<a href="mailto:hellosunaya@gmail.com?Subject=Hello%20there!" target="_top" id="email">hellosunaya@gmail.com</a>
+					<br>
+					<a href="./media/resume.pdf">resume</a>
+					<span class="social" class="large-centered large-6">
+					 <a href="https://www.facebook.com/sunaya.kumar.3">
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+					 </a>
+					 <a href="https://www.instagram.com/sunayashivakumar/">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					 </a>
+					 <a href="https://github.com/SunayaShivakumar/hellosunaya">
+						<i class="fa fa-github-square" aria-hidden="true"></i>
+					 </a>
+					</span>
+				</p>
+			</div>
+			<div class="large-6 medium-4 little-4 columns" style="float: left;">
+				<img src="./media/back.png">
+			</div>
+		</div>
+	</div>
 
-  <footer class="row text-center">
-    <h5>Content taken from <a href="https://en.wikipedia.org/wiki/Llama">wikipedia</a>.</h5>
-  </footer>
-  <!-- Scripts -->
-  
-  <script src="./lib/jquery/dist/jquery.min.js"></script>
-  <script src="./lib/foundation-sites/dist/foundation.min.js"></script>
-  <script src="./js/script.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
-  <script src="http://localhost:35729/livereload.js"></script>
+	<div id="about" class="row text-left">
+		<div class="large-10 large-offset-1 columns">
+			<h1>
+				A little something about me.
+			</h1>
+			<p>&nbsp</p>
+			<p>
+				 My interests include machine learning, and human computer interaction. I'm currently involved in research at the Siebel Center for Computer Science, and am exploring the intersection of computing and design. I also occasionally dabble in fine art and design.
+			</p>
+		</div>
+	</div>
+
+	<div id="projects" class="row text-left">
+		<div class="large-10 large-offset-1 columns">
+			<h1>
+				Projects that I've worked on.
+			</h1>
+			<p>&nbsp</p>
+			<div id="projects-list" class="large-6 columns">
+				<ul class="no-bullet">
+					<li>
+						<h2>
+							The Elements of Fashion Style <small>- Proceedings of UIST '16</small>
+						</h2>
+						<br>
+						<img src="./media/fashion.png">
+						<br>
+						<br>
+						<p>
+							The outfits people wear contain latent fashion concepts capturing styles, seasons, events, and environments. Fashion theorists have proposed that these concepts are shaped by design elements such as color, material, and silhouette. While a dress may be “bohemian” because of its pattern, material, trim, or some combination thereof, it is not always clear how low-level elements translate to high-level styles. In this paper, we use polylingual topic modeling to learn latent fashion concepts jointly in two languages capturing these elements and styles. This latent topic formulation enables translation between languages through topic space, exposing the elements of fashion style. The model is trained on a set of more than half a million outfits collected from Polyvore, a popular fashion-based social network. We present novel, data-driven fashion applications that allow users to express their desires in natural language just as they would to a real stylist, and produce tailored item recommendations for their fashion needs. Read more <a href="./media/fashion.pdf"><u>here</u></a>.
+						</p>
+					</li>
+					<br>
+					<br>
+					<li>
+						<h2>
+							What Makes a Cuisine Unique?
+						</h2>
+						<br>
+						<img src="./media/cuisine.png">
+						<br>
+						<br>
+						<p>
+							There are many different national and cultural cuisines from around the world, but what makes each of them unique? We try to answer that question by making use of multinomial logistic regression model to learn and predict unique cuisine styles. Furthermore, we attempt to identify fusion-cuisines that are borne of two or more distinct cuisine styles, using k-means clustering. Results demonstrate that cuisines are too diverse to predict with very high accuracies – which may have led to the creation of fusion-cuisines. Read more <a href="./media/cuisine.pdf"><u>here</u></a>.
+						</p>
+					</li>
+					<br>
+					<br>
+					</ul>
+					</div>
+					<div id="projects-list" class="large-5 columns">
+					<ul class="no-bullet">
+					<li>
+						<h2>
+							Novel Ideas <small>- Web application</small>
+						</h2>
+						<br>
+						<img src="./media/ni.png">
+						<br>
+						<br>
+						<p>
+							Novel Ideas is a virtual book club. It is a responsive web application that fosters and promotes book-loving communities to keep reading good books, and keep track of their favorites. Users can search for books, add reviews and ratings, and follow other users to get inspired on what books to read next. Interact with it <a href="https://bazinga498.herokuapp.com/"><u>here</u></a>.
+						</p>
+					</li>
+					<br>
+					<br>
+					<li>
+						<h2>
+							Disease Alert <small>- Android application</small>
+						</h2>
+						<br>
+						<img src="./media/disease.png">
+						<br>
+						<br>
+						<p>
+							Disease Alert is a proposed mobile application prototype that provides a general overview of nearby disease outbreaks by means of an interactive map and a list of relevant news articles. It is designed to provide immediate notifications relating to serious disease outbreaks in the user's vicinity, and raise awareness about disease outbreaks around the globe.
+						</p>
+					</li>
+					<br>
+					<br>
+					<li>
+						<h2>
+							This Website <small>- Web application</small>
+						</h2>
+						<br>
+						<p>
+							A personal website constructed as part of a design class project.<!--  Read more <a href="#"><u>here</u></a>. -->
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="portfolio" class="row text-left">
+		<div class="large-10 large-offset-1 columns">
+			<h1>
+				Selected artwork.
+			</h1>
+			<p>&nbsp</p>
+			<div id="projects-list" class="large-6 columns">
+				<ul class="no-bullet">
+					<li>
+						<img src="./media/lily.png">
+						<br>
+						<br>
+						<h2>
+							Lilies of the Desert <small>- Watercolor on paper.</small>
+						</h2>
+					</li>
+					<br>
+					<br>
+					<li>
+						<img src="./media/diptych.png">
+						<br>
+						<br>
+						<h2>
+							Reflected Motion <small>- Watercolor on paper.</small>
+						</h2>
+					</li>
+					<br>
+					<br>
+					<li>
+						<img src="./media/ballet.png">
+						<br>
+						<br>
+						<h2>
+							Ballet Practice <small>- Watercolor on paper.</small>
+						</h2>
+					</li>
+				</ul>
+			</div>
+			<div id="projects-list" class="large-5 columns">
+				<ul class="no-bullet">
+					<li>
+						<img src="./media/king.png">
+						<br>
+						<br>
+						<h2>
+							The King's Hunt <small>- Charcoal on paper.</small>
+						</h2>
+					</li>
+					<br>
+					<br>
+					<li>
+						<img src="./media/owl.png">
+						<br>
+						<br>
+						<h2>
+							Perfect Landing <small>- Watercolor on paper.</small>
+						</h2>
+					</li>
+					<br>
+					<br>
+					<li>
+						<img src="./media/boat.png">
+						<br>
+						<br>
+						<h2>
+							Unnamed <small>- Watercolor on paper.</small>
+						</h2>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<footer class="row text-center">
+		<div class="large-10 large-offset-1 columns">
+			<p style="float: left;">&copy; 2016 Sunaya Shivakumar</p>
+			<span class="social" class="large-centered large-6">
+			 <a href="https://www.facebook.com/sunaya.kumar.3">
+				<i class="fa fa-facebook-square" aria-hidden="true"></i>
+			 </a>
+			 <a href="https://www.instagram.com/sunayashivakumar/">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+			 </a>
+			 <a href="https://github.com/SunayaShivakumar/hellosunaya">
+				<i class="fa fa-github-square" aria-hidden="true"></i>
+			 </a>
+			</span>
+		</div>
+    </footer>
+	<!-- Scripts -->
+	
+	<script src="./lib/jquery/dist/jquery.min.js"></script>
+	<script src="./lib/foundation-sites/dist/foundation.min.js"></script>
+	<script src="./js/script.js"></script>
+	<script>
+	$(document).foundation();
+	</script>
+	<script src="http://localhost:35729/livereload.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+	<script>
+	    $(function(){
+	        $(".element").typed({
+	            strings: ["front-end web developer.", "UI/UX designer.", "CS undergrad at UIUC."],
+	            typeSpeed: 0,
+	            loop: true,
+	            backDelay: 1500
+	        });
+	    });
+	</script>
 
 </body>
 </html>
